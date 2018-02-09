@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+	<div id="app">
+		<p>{{msg}}</p>
+		<input type="text" v-model="msg|filterModel">
+	</div>
+	<script src="vue.js"></script>
+	<script>
+		Vue.filter('filterModel',{
+			read:function (val) {
+				return 'read' +val
+			},
+			write:function (newVal,oldVal) {
+				return 'write' + oldVal
+			}
+		})
+		var vm = new Vue({
+			el:"#app",
+			data:{
+				msg:'hello world'
+
+			}
+		})
+		
+	</script>
+</body>
+</html>
