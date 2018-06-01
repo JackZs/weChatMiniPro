@@ -1,5 +1,10 @@
 {
-	"pages":["pages/start/start","pages/index/index","pages/shop-cart/index"],
+	"pages":[
+		"pages/start/start",
+		"pages/index/index",
+		"pages/shop-cart/index",
+		"pages/me/index"
+	],
 	"window":{
 		"navigationBarBackgroundColor": "#fff",
 		 "navigationBarTextStyle":"black",
@@ -15,12 +20,19 @@
 			"text":"首页",
 			"iconPath":"images/nav/home-off.png",
 			"selectedIconPath":"images/nav/home-on.png"
-		},{
+		},
+		{
             "pagePath":"pages/shop-cart/index",
 			"text":"购物车",
 			"iconPath":"images/nav/cart-off.png",
 			"selectedIconPath":"images/nav/cart-on.png"
-		  }]
+		 },
+		{
+			"pagePath":"pages/me/index",
+			"text":"我的",
+			"iconPath":"images/nav/my-off.png",
+			"selectedIconPath":"images/nav/my-on.png"
+		}]
 
 	}
 }
